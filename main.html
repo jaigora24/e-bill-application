@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            E-billing
+        </title>
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body class="bo">
+        <div id="header">
+            <h1 class="bil"> E-Billing</h1>
+        </div>
+        <hr>
+        <nav style="width:100%; margin: 100px; display:inline; text-align: center;">
+            <a href="" class="h"> Home
+            </a>
+            <a href="" class="h"> Notifications
+            </a>    
+        </nav>
+        <br>
+        <br>
+        <div class="form">
+            <form action="" method="GET">
+                <div id="info">
+                    <label for="doc">Document type:</label>
+                    <select name="doc" id="doc" >
+                        <option value="" disabled selected>Select Document type</option>
+                        <option value="bill">Bill</option>
+                        <option value="invoice">Tax Invoice</option>
+                        <option value="challan">Challan</option>
+                    </select>
+                    <p class="detl">Document Date:<input type="datetime-local" name="" id="">
+                    </p>
+                    <fieldset class="detl detls">
+                    <legend><h2>Seller details :</h2></legend>
+                    <p class="detl">
+                        <input type="text" placeholder="Name" style="height:30px" requiredname="name"></input>
+                    </p>
+                    <p class="detl">
+                        <input type="text" placeholder="Address" requiredname="address" style="height:30px" size="60"></input>
+                    </p>
+                    <p class="detl">
+                        <input type="email" placeholder="Email" style="height:30px"></input>
+                    </p>
+                    <p class="detl">
+                        <input type="text" placeholder="Contact" maxlength="10" size="15" style="height:30px"></input>
+                    </p>
+                       
+                </fieldset>
+                <fieldset class="detl detls">
+                <legend><h2>Customer details :</h2></legend>
+                    <p class="detl">
+                        <input type="text" placeholder="Customer Name" requiredname="name" style="height:30px"></input>
+                    </p>
+                    <p class="detl">
+                        <input type="text" placeholder="Customer Address" requiredname="address" size="60" style="height:30px"></input>
+                    </p>
+                    <p class="detl">
+                        <input type="email" placeholder="Customer Email" style="height:30px"></input>
+                    </p>
+                    <p class="detl">
+                        <input type="text" placeholder="Customer Contact" maxlength="10" size="15" style="height:30px"></input>
+                    </p>
+                       
+                </fieldset>
+                <fieldset class="detls">
+                    <legend><h2>Item details :</h2></legend>
+                    <form id="data">
+                        <table class="tbl">
+                            <tr>
+                                <th>Items</th>
+                                <th>Price(in Rs.)</th>
+                            </tr>
+                            <tr>
+                                <td id="i1"><input style="height:30px" id="item1" type="text" name="item1" size="40" /></td>
+                                <td id="ip1"><input style="height:30px" id="item1p" type="text" name="item1p" size="10" value="" /></td>
+                            </tr>
+                            <tr>
+                                <td id="i2"><input style="height:30px" id="item2" type="text" name="item2" size="40" /></td>
+                                <td id="ip2"><input style="height:30px" id="item2p" type="text" name="item2p" size="10" value="" /></td>
+                            </tr>
+                            <tr>
+                                <td id="i3"><input style="height:30px" id="item3" type="text" name="item3" size="40" /></td>
+                                <td id="ip3"><input style="height:30px" id="item3p" type="text" name="item3p" size="10" value="" /></td>
+                            </tr>
+                            <tr>
+                                <td id="i4"><input style="height:30px" id="item4" type="text" name="item4" size="40" /></td>
+                                <td id="ip4"><input style="height:30px" id="item4p" type="text" name="item4p" size="10" value="" /></td>
+                            </tr>
+                            <tr>
+                                <td id="i5"><input style="height:30px" id="item5" type="text" name="item5" size="40" /></td>
+                                <td id="ip5"><input style="height:30px" id="item5p" type="text" name="item5p" size="10" value="" /></td>
+                            </tr>
+                            <tr>
+                                <td id="i6"><input style="height:30px" id="item6" type="text" name="item6" size="40" /></td>
+                                <td id="ip6"><input style="height:30px" id="item6p" type="text" name="item6p" size="10" value="" /></td>
+                            </tr>
+                            <tr>
+                                <td id="i7"><input style="height:30px" id="item7" type="text" name="item7" size="40" /></td>
+                                <td id="ip7"><input style="height:30px" id="item7p" type="text" name="item7p" size="10" value="" /></td>
+                            </tr>
+                            <tr>
+                                <td id="i8"><input style="height:30px" id="item8" type="text" name="item8" size="40" /></td>
+                                <td id="ip8"><input style="height:30px" id="item8p" type="text" name="item8p" size="10" value="" /></td>
+                            </tr>
+                            <tr>
+                                <td id="i9"><input style="height:30px" id="item9" type="text" name="item9" size="40" /></td>
+                                <td id="ip9"><input style="height:30px" id="item9p" type="text" name="item9p" size="10" value="" /></td>
+                            </tr>
+                            <tr>
+                                <td id="i10"><input style="height:30px" id="item10" type="text" name="item10" size="40" /></td>
+                                <td id="ip10"><input style="height:30px" id="item10p" type="text" name="item10p" size="10" value="" />Rs</td>
+                            </tr>
+                        </table>
+                    </form>
+                    <br>
+                    <table class="final-bill">
+                        <tr>
+                            <th>Subtotal&nbsp; : &nbsp;</th>
+                            <td>
+                                <h5 id="demo"> </h5>
+                            <td>
+                        </tr>
+                        <tr>
+                            <th>Tax (if any)&nbsp; : &nbsp;</th>
+                            <td><input placeholder="0" style="height:20px" id="tax" type="text" name="tax" size="1" value="" /> %</td>
+                        </tr>
+                        <tr>
+                            <th>Total amount&nbsp; : &nbsp;</th>
+                            <td>
+                                <h5 id="final"> </h5>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset class="detls">
+                    <legend><h2>Transaction details</h2></legend>
+                    <label for="modes"><b>Mode of Payment</b>&nbsp;:</label>
+                    <select style="height:30px" name="modes" id="modes">
+                        <option value="blank">--</option>
+                        <option value="cash">Cash</option>
+                        <option value="paytm">Paytm</option>
+                        <option value="GPay">Google Pay</option>
+                        <option value="cdcard">Credit/ Debit card</option>
+                        <option value="netbanking">Net Banking</option>
+                    </select>
+                    <br><br>
+                    <input style="" type="text" placeholder="Reference Id (if any)" value=""></input>
+                    <br><br><hr>
+                </fieldset>
+                <h2 class="thnk">Thank you for shopping with us. Have a great day :)</h2>
+                </div>
+            </form>
+            <br><br>
+            <button class="but" value="Submit">Calculate</button>
+            <button class="but" value="Submit">Print</button>
+            <button class="but" value="Submit">Next Bill</button>
+        </div>
+    </body>
+</html>
