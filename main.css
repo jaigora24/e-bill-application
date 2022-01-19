@@ -1,0 +1,29 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.bil{
+    color: rgb(4, 56, 153);
+    background-color: darkblue;
+    text-align: center;
+    padding: 5px;
+}
+.detl{
+    padding: 2px;
+}
+.detls{
+    font-family: sans-serif ;
+    color: rgb(4, 56, 153);
+    background-color: #eef2fcb6;
+}
+.but{
+    color: blue;
+}
+.thnk{
+    text-align: center;
+    margin: 20px;
+    color: rgba(0, 68, 196, 0.788);
+}
+.h{
+    margin-left: 400px;
+}
