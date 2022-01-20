@@ -1,0 +1,67 @@
+input[type=text] {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+body{
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #bdc2cab6;
+}
+h1{
+  text-align: center;
+  color: black;
+  padding: 20px;
+}
+#modes{
+  border-color: white;
+}
+h4{
+  text-align: center;
+}
+#calculate-btn{
+  width: 100%;
+  background-color: #929797;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px; 
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#calculate-btn:hover{
+  background-color: rgb(179, 183, 187);
+  color: rgb(0, 0, 0); 
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#print-btn{
+  width: 100%;
+  background-color: #929797; 
+  border: none; color: rgb(0, 0, 0); 
+  padding: 16px 32px; 
+  text-align: center; 
+  font-size: 16px; 
+  margin: 4px 2px; 
+  opacity: 1; 
+  transition: 0.3s; 
+  border-radius: 25px;   
+  cursor: pointer;
+}
+#print-btn:hover{
+  background-color: rgb(179, 183, 187); 
+  color: rgb(0, 0, 0); 
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.tbl{
+  margin-left: auto;
+  margin-right: auto;
+}
+#tax{
+  width: 28px;
+}
