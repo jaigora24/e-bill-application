@@ -3,57 +3,32 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initialscale=1.0">
-        <link rel="shortcut icon" type="image/jpeg" href="images/ebill.png">
+        <link rel="shortcut icon" type="image/jpeg" href="D:\Web Development\E billing application\ebill.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <title>
-            E-Billing Application
-        </title>
+        <title>E-Billing Application</title>
         <link rel="stylesheet" href="D:\Web Development\E billing application\main.css">
-        <script src="src/main.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="D:\Web Development\E billing application\main.js"></script>
     </head>
+
     <body>
         <div id="header">
             <h1 id="top-line">E-Bill Generator</h1>
-        </div>
-        <hr>
-        <br>
+        </div><hr><br>
         <div class="form">
-            <form action="" method="GET">
-                        Billing Date & Time:
-                        <input type="datetime-local" id="date">
-                    </p>
-                    <fieldset>
+            <form action="" method="GET">Billing Date & Time:<input type="datetime-local" id="date">
+                <fieldset>
                     <legend><h2>Seller details :</h2></legend>
-                    <p>
-                        <input type="text" placeholder="Seller Name" style="height:30px" requiredname="name"></input>
-                    </p>
-                    <p>
-                        <input type="text" placeholder="Seller Address" requiredname="address" style="height:30px" size="60"></input>
-                    </p>
-                    <p>
-                        <input type="text" placeholder="Seller Email" style="height:30px"></input>
-                    </p>
-                    <p>
-                        <input type="text" placeholder="Seller Contact" maxlength="10" size="15" style="height:30px"></input>
-                    </p>
-                       
+                    <p><input type="text" placeholder="Seller Name" style="height:30px" requiredname="name"></input></p>
+                    <p><input type="text" placeholder="Seller Address" requiredname="address" style="height:30px" size="60"></input></p>
+                    <p><input type="text" placeholder="Seller Email" style="height:30px"></input></p>
+                    <p><input type="text" placeholder="Seller Contact" maxlength="10" size="15" style="height:30px"></input></p>
                 </fieldset>
                 <fieldset>
-                <legend><h2>Customer details :</h2></legend>
-                    <p>
-                        <input type="text" placeholder="Customer Name" requiredname="name" style="height:30px"></input>
-                    </p>
-                    <p>
-                        <input type="text" placeholder="Customer Address" requiredname="address" size="60" style="height:30px"></input>
-                    </p>
-                    <p>
-                        <input type="text" placeholder="Customer Email" style="height:30px"></input>
-                    </p>
-                    <p>
-                        <input type="text" placeholder="Customer Contact" maxlength="10" size="15" style="height:30px"></input>
-                    </p>
-                       
+                    <legend><h2>Customer details :</h2></legend>
+                    <p><input type="text" placeholder="Customer Name" requiredname="name" style="height:30px"></input></p>
+                    <p><input type="text" placeholder="Customer Address" requiredname="address" size="60" style="height:30px"></input></p>
+                    <p><input type="text" placeholder="Customer Email" style="height:30px"></input></p>
+                    <p><input type="text" placeholder="Customer Contact" maxlength="10" size="15" style="height:30px"></input></p>
                 </fieldset>
                 <fieldset>
                     <legend><h2>Item details :</h2></legend>
@@ -104,8 +79,7 @@
                                 <td id="ip10"><input style="height:30px" placeholder="price" id="item10p" type="text" name="item10p" size="10" value="" />Rs</td>
                             </tr>
                         </table>
-                    </form>
-                    <br>
+                    </form><br>
                     <table class="final-bill">
                         <tr>
                             <th>Subtotal&nbsp; : &nbsp;</th>
