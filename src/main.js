@@ -1,5 +1,4 @@
 function addNumbers() {
-    
     var val1 = Number(document.getElementById("item1p").value);
     var val2 = Number(document.getElementById("item2p").value);
     var val3 = Number(document.getElementById("item3p").value);
@@ -11,7 +10,6 @@ function addNumbers() {
     var val9 = Number(document.getElementById("item9p").value);
     var val10 = Number(document.getElementById("item10p").value);
     var val11 = Number(document.getElementById("tax").value);
-    
     var total = val1 + val2 + val3 + val4 + val5 + val6 + val7 + val8 + val9 + val10;
     document.getElementById("demo").innerHTML = total + "&nbsp;&nbsp;Rs";
     
@@ -20,32 +18,24 @@ function addNumbers() {
 }
 
 function refresh(){
-    
     window.location.reload();
-    
 }
 
 function print_page() {
-    
     var ButtonControl = document.getElementById("print-btn");
     ButtonControl.style.visibility = "hidden";
     var ButtonControl = document.getElementById("calculate-btn");
     ButtonControl.style.visibility = "hidden";
     window.print();
-    
 }
 
 $(document).ready(function(){
-    
     $("#calculate-btn").click(function(){
       $("#top-line").hide();
-        
     });
-    
 });
 
 ///$(document).ready(function() {
-
 ///    $('#calculate-btn').click(function() {
 
 ///        if (!$('#item1').val() && !$('#item2').val() && !$('#item3').val() && !$('#item4').val() && !$('#item5').val() && !$('#item6').val() && !$('#item7').val() && !$('#item8').val() && !$('#item9').val() && !$('#item10').val()){
@@ -53,18 +43,14 @@ $(document).ready(function(){
 ///        }
 
 ///    })
-
 ///});
 
 $(document).ready(function() {
-    
     $('#calculate-btn').click(function() {
-        
         if (!$('#item1').val() && !$('#item2').val() && !$('#item3').val() && !$('#item4').val() && !$('#item5').val() && !$('#item6').val() && !$('#item7').val() && !$('#item8').val() && !$('#item9').val() && !$('#item10').val()){
-            alert('alert');
+            alert('Dear User, You have not filled item details');
         }
-        else
-        {
+        else{
             if (!$('#item1').val()) {
                 $("#i1").hide();
                 $("#ip1").hide();
