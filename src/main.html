@@ -6,8 +6,8 @@
         <link rel="shortcut icon" type="image/jpeg" href="D:\Web Development\E billing application\ebill.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <title>E-Billing Application</title>
-        <link rel="stylesheet" href="D:\Web Development\E billing application\main.css">
-        <script src="D:\Web Development\E billing application\main.js"></script>
+        <link rel="stylesheet" href="src/main.css">
+        <script src="src/main.js"></script>
     </head>
 
     <body>
@@ -16,21 +16,21 @@
         </div><hr><br>
         <div class="form">
             <form action="" method="GET">Billing Date & Time:<input type="datetime-local" id="date">
-                <fieldset>
+                <fieldset class="seller">
                     <legend><h2>Seller details :</h2></legend>
                     <p><input type="text" placeholder="Seller Name" style="height:30px" requiredname="name"></input></p>
                     <p><input type="text" placeholder="Seller Address" requiredname="address" style="height:30px" size="60"></input></p>
                     <p><input type="text" placeholder="Seller Email" style="height:30px"></input></p>
                     <p><input type="text" placeholder="Seller Contact" maxlength="10" size="15" style="height:30px"></input></p>
                 </fieldset>
-                <fieldset>
+                <fieldset class="seller">
                     <legend><h2>Customer details :</h2></legend>
                     <p><input type="text" placeholder="Customer Name" requiredname="name" style="height:30px"></input></p>
                     <p><input type="text" placeholder="Customer Address" requiredname="address" size="60" style="height:30px"></input></p>
                     <p><input type="text" placeholder="Customer Email" style="height:30px"></input></p>
                     <p><input type="text" placeholder="Customer Contact" maxlength="10" size="15" style="height:30px"></input></p>
                 </fieldset>
-                <fieldset>
+                <fieldset class="seller">
                     <legend><h2>Item details :</h2></legend>
                     <form id="data">
                         <table class="tbl">
@@ -99,7 +99,7 @@
                         </tr>
                     </table>
                 </fieldset>
-                <fieldset>
+                <fieldset class="seller">
                     <legend><h2>Transaction details</h2></legend>
                     <label for="modes"><b>Mode of Payment</b>&nbsp;:</label>
                     <select style="height:30px" name="modes" id="modes">
@@ -120,7 +120,7 @@
             <br><br>
             <section class="btns">
                 <button onclick="addNumbers();" id="calculate-btn" value="Submit"><b>Calculate Bill</b></button>
-                <button onclick="print_page()" id="print-btn" value="Submit"><b>Print Bill</b></button>
+                <button onclick="print_page()" id="print-btn" value="Submit"><b>Print Bill</b></button><br><br>
             </section>
         </div>
     </body>
